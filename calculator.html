@@ -6,6 +6,9 @@
         function sin() {
             var num = document.getElementById("n1");
             num.value = Math.sin(num.value);
+        function square() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 2);
         }
         function cube() {
             var num = document.getElementById("n1");
@@ -23,8 +26,9 @@
     <input type="text" id="n1">
     <p>
         <button onclick="sin()"> sin(x) </button>
-        <button onclick="cube()"> x<sup>3</sup> </button>
-        <button onclick="fourthPow()"> x<sup>4</sup> </button>
+        <button onclick="square()"> x^2 </button>
+        <button onclick="cube()"> x^3 </button>
+        <button onclick="fourthPow()"> x^4 </button>
     </p>
 </body>
 </html>
